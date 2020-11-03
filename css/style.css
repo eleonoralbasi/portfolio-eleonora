@@ -16,9 +16,6 @@ body {
   line-height: 1.7em;
   color: #0a0a0a;
 }
-header {
-
-}
 
 .accent{
   color: #1ac0c6;
@@ -121,11 +118,26 @@ a:active {
   text-align: left;
 }
 
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+header{
+  display: block;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.3);
+}
+
 nav{
   display: inline-block;
   width: 100%;
   margin: 0;
-
 }
 
 nav > ul{
