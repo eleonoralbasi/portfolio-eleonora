@@ -11,14 +11,13 @@
 
 <body>
   <header>
-    <div>
-      <img src="./img/logo@2x.svg" alt="eleonora-logo">
+    <div class="container">
+      <img src="./img/logo@3x.svg" class="elelogo" alt="eleonora-logo">
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Projects</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="https://drive.google.com/file/d/1qTHxbfGziaZdGMQ3Ed6lyZdtZpYw1_Cl/view?usp=sharing" target="_blank">Resume</a></li>
         </ul>
       </nav>
     </div>
@@ -26,8 +25,9 @@
   <!--hero-->
   <min>
     <div id="hero">
+      <div class="container">
       <!--About me section block-->
-      <h1>About me </h1>
+      <h2>About me </h2>
       <div>
         <!--open row with two columns-->
         <div>
@@ -36,10 +36,11 @@
             <img src="img/other/picture.jpg" alt="eleonora's picture">
           </picture>
         </div>
+      </div>
         <!--end first column-->
         <div>
           <!--second column for my story-->
-          <p>👋 Hi, my name is Eleonora and I am a UI/UX Designer, with an eye for details and
+          <p id="description">👋 Hi, my name is Eleonora and I am a UI/UX Designer, with an eye for details and
             focused on crafting beautiful digital experiences that help people reach their goals. <br>
             📸 Colouring and taking photos have been my passions since I was a child, and together
             with my interest in psychology, I realized what I wanted to do in my life, and I went back
@@ -51,27 +52,25 @@
             📬 Currently, I am looking for a new job opportunity and I would love to relocate in a
             beautiful European city. If you find my work inspiring, feel free to drop me a message
             using the Contact page!</p>
+            <a href="https://drive.google.com/file/d/1qTHxbfGziaZdGMQ3Ed6lyZdtZpYw1_Cl/view?usp=sharing" class="button" target="_blank">See Resume</a>
         </div>
       </div>
     </div>
+    <div class="container">
     <div>
-      <h2> I also love to travel, and here you can find some of my photos</h2>
+      <h4> I also love to travel, and here you can find some of my photos</h4>
     </div>
     </main>
 
     <footer id="contact">
       <div>
-        <h2>Get in touch! </h2>
-        <p>Do you like my work and want to discuss opportunities? Please get in touch</p>
-        <div>
-          <a href="mailto:eleonoralbasi@gmail.com">E-mail me</a>
-        </div>
+        <h4> Follow me on: </h4>
       </div>
       <div>
         <!--social profiles-->
-        <ul>
+        <ul class="icons">
           <li><a href="https://www.linkedin.com/in/eleonora-albasi/" target="_blank">
-              <svg enable-background="new 0 0 50 50" id="Layer_1" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg class="linkedinlogo" enable-background="new 0 0 50 50" id="Layer_1" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M45,1H5C2.8,1,1,2.8,1,5v40c0,2.2,1.8,
       4,4,4h40c2.2,0,4-1.8,4-4V5C49,2.8,47.2,1,45,1z" fill="#0E76A8" />
                 <g id="in">
@@ -83,7 +82,7 @@
               </svg alt="linkedin-icon">
             </a> </li>
           <li><a href="https://twitter.com/AlbasiEleonora" target="_blank">
-              <svg enable-background="new 0 0 50 50" id="Layer_1" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg class="twitterlogo" enable-background="new 0 0 50 50" id="Layer_1" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M45,1H5C2.8,1,1,2.8,1,5v40c0,2.2,1.8,4,4,4h40c2.2,0,4-1.8,4-4V5C49,2.8,47.2,
       1,45,1z" fill="#2CA7E0" />
                 <path d="M40,16.2c-1.1,0.5-2.8,1.1-4,1.3c1.3-0.8,2.5-2.6,3-4c-1,
@@ -94,7 +93,7 @@
               </svg alt="twitter-icon">
             </a></li>
           <li><a href="https://dribbble.com/Eleonoralbasi" target="_blank">
-              <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg class="dribbblelogo" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <style type="text/css">
                   .st0 {
                     fill: #EF5B98;
@@ -126,7 +125,7 @@
               </svg alt="dribbble-profile">
             </a></li>
           <li><a href="https://www.behance.net/eleonoralbasi" target="_blank">
-              <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg class="behancelogo" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <style type="text/css">
                   .st0 {
                     fill: #4863AE;
@@ -160,7 +159,8 @@
               </svg alt="behance-profile">
             </a></li>
     </footer>
-
+  </div>
+</div>
 </body>
 
 </html>

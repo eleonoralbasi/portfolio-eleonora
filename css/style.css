@@ -1,25 +1,56 @@
-/*colors used:
-Primary color (white): #FFFFFF;
-Secondary color (black): #0A0A0A;
+/*colors used
+Background color (white): #FFFFFF;
+Text color (black): #0A0A0A;
+Primary color: 1AC0C6
+secondary color: 134E6F
 */
-body {
-  background-color: #ffffff;
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+* {
+  box-sizing: border-box;
 }
 
-h1, h2 {
-  line-height: '1.8';
+body {
+  background-color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7em;
+  color: #0a0a0a;
+}
+header {
+
+}
+
+.accent{
+  color: #1ac0c6;
 }
 
 h1 {
-  font-size: '2.75em';
-  font-weight: '700';
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.17em;
+  color: #0a0a0a;
 }
 
+
 h2 {
-  font-size: '2.25em';
-  font-weight: '600';
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+h3{
+  font-size: 16px;
+  font-weight: 200;
+  color: #134E6F;
+}
+h4{
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.elelogo{
+  max-width: 200px;
+  padding: 16px 0;
 }
 
 p {
@@ -30,6 +61,7 @@ img {
   width: 100%;
 }
 
+
 a {
   color: #0a0a0a;
   text-decoration: none;
@@ -37,16 +69,76 @@ a {
 
 a:focus,
 a:hover {
-  color: #0a0a0a;
-  text-decoration: underline;
-  font-weight: bold;
+  color: #1ac0c6;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 a:active {
-  color: #0a0a0a;
-  text-decoration: underline;
+  color: #134e6f;
+  text-decoration: none;
 }
 
-.linkedin-logo{
+.linkedinlogo,
+.twitterlogo,
+.dribbblelogo,
+.behancelogo{
   width: 25px;
+}
+
+.button{
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #1AC0C6;
+}
+.button:hover{
+  background-color: #1ac0c6;
+  color: #ffffff;
+}
+.button:active{
+  background-color: #134E6F;
+  color: #ffffff;
+}
+
+/*layout styling*/
+.container{
+  padding: 0 16px;
+}
+
+.row{
+  margin: 25px 0;
+}
+
+.icons > li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px;
+}
+#description{
+  text-align: left;
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+
+}
+
+nav > ul{
+  list-style-type: none;
+  text-align: right;
+
+}
+
+nav > ul > li{
+  display: inline-block;
+}
+nav > ul > li > a{
+  padding: 0 16px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
