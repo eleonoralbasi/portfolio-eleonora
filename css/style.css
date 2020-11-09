@@ -81,7 +81,7 @@ a:active {
 .twitterlogo,
 .dribbblelogo,
 .behancelogo{
-width: 25px;
+ width: 25px;
 }
 
 .button{
@@ -159,9 +159,92 @@ nav > ul > li > a{
   text-transform: uppercase;
   font-weight: 600;
 }
+#title{
+  animation: title-animation 1s normal forwards ease-out;
+}
+
+@keyframes title-animation {
+  from{ transform: translateX(-400px);}
+  to { transform: translateX(0);}
 
 
+}
 
+#Fill-50,
+#left-leaf
+{
+  animation: left-leaf-animation 15s infinite alternate linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes left-leaf-animation {
+  0%{ transform: rotate(0deg);
+  }
+
+  50%{ transform: rotate(10deg);
+  }
+  100%{ transform: rotate(0deg);
+  }
+}
+
+
+#Fill-47,
+#Fill-48{
+  animation: right-leaf-animation 15s infinite alternate linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes right-leaf-animation {
+  0%{ transform: rotate(0deg);
+  }
+
+  50%{ transform: rotate(-8deg);
+  }
+  100%{ transform: rotate(0deg);
+  }
+}
+
+#Fill-128,
+#Fill-129,
+#Fill-130,
+#Fill-131,
+#Fill-132,
+#Fill-133,
+#Fill-134,
+#Fill-135,
+#icon-heart
+{
+  animation: icons-animation 10s infinite alternate linear;
+  transform-origin: 0;
+}
+@keyframes icons-animation {
+  0%{ transform: translateY(0);
+  }
+
+  100%{ transform: translateY(-10px);
+  }
+}
+
+#Fill-23,
+#Fill-24,
+#Fill-25,
+#Fill-26{
+  animation: face-animation 10s  infinite normal forwards ease-out;
+  transform-origin: 0;
+  transform-box: fill-box;
+}
+@keyframes face-animation {
+  0%{ transform: rotate(0deg);
+  }
+  10%,
+  60%{ transform: rotate(2deg);
+  }
+
+  70%,
+  100%{ transform: rotate(-2deg);
+  }
+
+}
 /*===============================
 Medium devices (640px and larger)
 ===============================*/
