@@ -17,7 +17,7 @@ body {
   color: #0a0a0a;
 }
 
-.accent {
+.accent{
   color: #1ac0c6;
 }
 
@@ -28,6 +28,7 @@ h1 {
   color: #0a0a0a;
 }
 
+
 h2 {
   font-size: 2em;
   font-weight: 600;
@@ -35,18 +36,17 @@ h2 {
   margin: 0.4em auto;
 }
 
-h3 {
+h3{
   font-size: 16px;
   font-weight: 200;
   color: #134E6F;
 }
-
-h4 {
+h4{
   font-size: 1.4em;
   font-weight: 600;
 }
 
-.elelogo {
+.elelogo{
   max-width: 150px;
   margin: 20px 0;
 }
@@ -59,7 +59,7 @@ p {
 img {
   width: 100%;
 }
-
+/*links and buttons style*/
 a {
   color: #0a0a0a;
   text-decoration: none;
@@ -80,11 +80,11 @@ a:active {
 .linkedinlogo,
 .twitterlogo,
 .dribbblelogo,
-.behancelogo {
-  width: 25px;
+.behancelogo{
+ width: 25px;
 }
 
-.button {
+.button{
   display: inline-block;
   font-weight: 400;
   font-size: 16px;
@@ -93,34 +93,33 @@ a:active {
   border: 1px solid #1AC0C6;
   transition-duration: 0.2s opacity;
 }
-
-.button:hover {
+.button:hover{
   background-color: #1ac0c6;
   color: #ffffff;
   opacity: 0.8;
-}
 
-.button:active {
+}
+.button:active{
   background-color: #134E6F;
   color: #ffffff;
 }
 
 /*layout styling*/
-.container {
+.container{
   padding: 0 16px;
 }
 
-.row {
+.row{
   margin: 25px 0;
 }
 
-.icons>li {
+
+.icons > li {
   list-style-type: none;
   display: inline-block;
   padding: 8px;
 }
-
-#description {
+#description{
   text-align: left;
 }
 
@@ -130,92 +129,86 @@ a:active {
   width: 100%;
 }
 
-header {
+header{
   display: block;
   position: fixed;
   background-color: #ffffff;
   width: 100%;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.3);
-  -moz-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.3);
-  box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.3);
 }
 
-nav {
+nav{
   display: inline-block;
   width: 100%;
   margin: 0;
 }
 
-nav>ul {
+nav > ul{
   list-style-type: none;
   text-align: right;
+
 }
 
-nav>ul>li {
+nav > ul > li{
   display: inline-block;
 }
-
-nav>ul>li>a {
+nav > ul > li > a{
   padding: 0 16px;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-#title {
+/*animation*/
+
+/*h1 animation*/
+
+#title{
   animation: title-animation 1s normal forwards ease-out;
 }
 
 @keyframes title-animation {
-  from {
-    transform: translateX(-400px);
-  }
-
-  to {
-    transform: translateX(0);
-  }
+  from{ transform: translateX(-400px);}
+  to { transform: translateX(0);}
 }
 
+/* leaves animation*/
+
 #Fill-50,
-#left-leaf {
+#left-leaf
+{
   animation: left-leaf-animation 15s infinite alternate linear;
   transform-origin: center;
   transform-box: fill-box;
 }
-
 @keyframes left-leaf-animation {
-  0% {
-    transform: rotate(0deg);
+  0%{ transform: rotate(0deg);
   }
 
-  50% {
-    transform: rotate(10deg);
+  50%{ transform: rotate(10deg);
   }
-
-  100% {
-    transform: rotate(0deg);
+  100%{ transform: rotate(0deg);
   }
 }
 
 #Fill-47,
-#Fill-48 {
+#Fill-48{
   animation: right-leaf-animation 15s infinite alternate linear;
   transform-origin: center;
   transform-box: fill-box;
 }
-
 @keyframes right-leaf-animation {
-  0% {
-    transform: rotate(0deg);
+  0%{ transform: rotate(0deg);
   }
 
-  50% {
-    transform: rotate(-8deg);
+  50%{ transform: rotate(-8deg);
   }
-
-  100% {
-    transform: rotate(0deg);
+  100%{ transform: rotate(0deg);
   }
 }
+
+/*social icons animation*/
 
 #Fill-128,
 #Fill-129,
@@ -225,107 +218,103 @@ nav>ul>li>a {
 #Fill-133,
 #Fill-134,
 #Fill-135,
-#icon-heart {
+#icon-heart
+{
   animation: icons-animation 10s infinite alternate linear;
   transform-origin: 0;
 }
-
 @keyframes icons-animation {
-  0% {
-    transform: translateY(0);
+  0%{ transform: translateY(0);
   }
 
-  100% {
-    transform: translateY(-10px);
+  100%{ transform: translateY(-10px);
   }
 }
+
+/* face animation*/
 
 #Fill-23,
 #Fill-24,
 #Fill-25,
-#Fill-26 {
-  animation: face-animation 10s infinite normal forwards ease-out;
+#Fill-26{
+  animation: face-animation 10s  infinite normal forwards ease-out;
   transform-origin: 0;
   transform-box: fill-box;
 }
-
 @keyframes face-animation {
-  0% {
-    transform: rotate(0deg);
+  0%{ transform: rotate(0deg);
   }
-
   10%,
-  60% {
-    transform: rotate(2deg);
+  60%{ transform: rotate(2deg);
   }
 
   70%,
-  100% {
-    transform: rotate(-2deg);
+  100%{ transform: rotate(-2deg);
   }
-}
 
+}
 /*===============================
 Medium devices (640px and larger)
 ===============================*/
-@media only screen and (min-width: 640px) {
-  body {
-    font-size: 18px;
-  }
+@media only screen and (min-width: 640px){
 
-  #hero {
+  body{
+  font-size: 18px;
+}
+
+  #hero{
     text-align: center;
   }
+  nav > ul {
+  width: auto;
+  float: right;
+  margin-top: -70px;
+}
 
-  nav>ul {
-    width: auto;
-    float: right;
-    margin-top: -70px;
-  }
+[class*="col-"]{
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-md-6 {
+  width: 50%;
+}
 
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
 }
 
 /*===============================
 Large devices (1024px and larger)
 ===============================*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px){
+
   .col-lg-7 {
     width: 60%;
     margin-top: auto;
   }
-
-  .col-lg-5 {
+  .col-lg-5{
     width: 40%;
   }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h1 {
+  #hero {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  h1{
     margin: 200px 40px;
     padding: 0;
     text-align: left;
+
   }
 }
+
 
 /*===============================
 X-Large devices (1440px and larger)
 ===============================*/
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px){
+
+}
