@@ -1,8 +1,9 @@
 /*colors used
 Background color (white): #FFFFFF;
 Text color (black): #0A0A0A;
-Primary color: 1AC0C6
-secondary color: 134E6F
+Primary color: #1AC0C6
+secondary color: #134E6F
+Tertiary color: #FFA822
 */
 * {
   box-sizing: border-box;
@@ -61,7 +62,7 @@ img {
 }
 /*links and buttons style*/
 a {
-  color: #0a0a0a;
+  color: #1AC0C6;
   text-decoration: none;
 }
 
@@ -90,8 +91,9 @@ a:active {
   font-size: 16px;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #1AC0C6;
+  border: 2px solid #1AC0C6;
   transition-duration: 0.2s opacity;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .button:hover{
   background-color: #1ac0c6;
@@ -105,9 +107,6 @@ a:active {
 }
 
 /*layout styling*/
-.container{
-  padding: 0 16px;
-}
 
 .row{
   margin: 25px 0;
@@ -142,6 +141,7 @@ header{
 nav{
   display: inline-block;
   width: 100%;
+  height: auto;
   margin: 0;
 }
 
@@ -158,8 +158,38 @@ nav > ul > li > a{
   padding: 0 16px;
   text-transform: uppercase;
   font-weight: 600;
+  color: #0a0a0a;
 }
 
+{
+  background-color: #FFE4BB;
+  background-size: contain;
+  padding: 16px;
+
+}
+
+.image,
+.profile{
+  margin: 0;
+  border-radius: 10px;
+}
+
+.profile,
+#description{
+  padding-top: 32px;
+}
+.highlight{
+  font-size: 1em;
+  font-weight: 700;
+  color: #1AC0C6;
+}
+.footer{
+    padding: 0 16px;
+    background-color: #FFE4BB;
+    background-size: contain;
+    padding: 16px;
+
+  }
 /*animation*/
 
 /*h1 animation*/
@@ -231,8 +261,7 @@ nav > ul > li > a{
   }
 }
 
-/* face animation*/
-
+/* face animation**/
 #Fill-23,
 #Fill-24,
 #Fill-25,
