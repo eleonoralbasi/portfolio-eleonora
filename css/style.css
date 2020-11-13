@@ -49,7 +49,7 @@ h4{
 
 .elelogo{
   max-width: 150px;
-  margin: 20px 0;
+  margin: 24px 16px;
 }
 
 p {
@@ -112,11 +112,11 @@ a:active {
   margin: 25px 0;
 }
 
-
 .icons > li {
   list-style-type: none;
   display: inline-block;
   padding: 8px;
+
 }
 #description{
   text-align: left;
@@ -161,13 +161,6 @@ nav > ul > li > a{
   color: #0a0a0a;
 }
 
-{
-  background-color: #FFE4BB;
-  background-size: contain;
-  padding: 16px;
-
-}
-
 .image,
 .profile{
   margin: 0;
@@ -190,6 +183,12 @@ nav > ul > li > a{
     padding: 16px;
 
   }
+
+.copyright{
+  text-align: center;
+
+}
+
 /*animation*/
 
 /*h1 animation*/
