@@ -23,10 +23,13 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
   line-height: 1.17em;
   color: #0a0a0a;
+  margin-top: 150px;
+  margin-left: 24px;
+text-align: center;
 }
 
 
@@ -35,30 +38,43 @@ h2 {
   font-weight: 600;
   line-height: 1em;
   margin: 0.4em auto;
+  margin-left: 8px;
 }
 
 h3{
   font-size: 16px;
   font-weight: 200;
   color: #134E6F;
+  margin-left: 8px;
 }
 h4{
   font-size: 1.4em;
   font-weight: 600;
+  margin-left: 8px;
 }
 
 .elelogo{
   max-width: 150px;
-  margin: 24px 16px;
+  margin: 16px 16px;
 }
 
 p {
   line-height: normal;
-  margin: 8px 0px 16px;
+  margin: 8px 8px;
 }
 
 img {
   width: 100%;
+}
+
+.illustration{
+margin: auto;
+max-width: 90%;
+}
+
+.project-image{
+  margin-top:16px;
+  border-radius: 10px;
 }
 /*links and buttons style*/
 a {
@@ -90,6 +106,7 @@ a:active {
   font-weight: 400;
   font-size: 16px;
   padding: 10px;
+  margin-left: 8px;
   border-radius: 10px;
   border: 2px solid #1AC0C6;
   transition-duration: 0.2s opacity;
@@ -99,17 +116,24 @@ a:active {
   background-color: #1ac0c6;
   color: #ffffff;
   opacity: 0.8;
+  border: none;
+  border: 2px solid #1AC0C6;
 
 }
 .button:active{
   background-color: #134E6F;
   color: #ffffff;
+  border: 2px solid #134e6f;
 }
 
 /*layout styling*/
 
 .row{
   margin: 25px 0;
+}
+.icons{
+  padding: 0;
+  margin-top: 8px;
 }
 
 .icons > li {
@@ -129,17 +153,24 @@ a:active {
 }
 
 header{
-  display: block;
+  display: flex;
   position: fixed;
   background-color: #ffffff;
   width: 100%;
+  height: auto;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.3);
   -moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.3);
   box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  z-index: 100;
 }
 
+.navigation-container{
+  width: 96%;
+  margin: auto;
+  display: flex;
+}
 nav{
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto;
   margin: 0;
@@ -147,21 +178,22 @@ nav{
 
 nav > ul{
   list-style-type: none;
-  text-align: right;
-
+  margin: 8;
+  float: right;
 }
 
 nav > ul > li{
   display: inline-block;
+
 }
 nav > ul > li > a{
   padding: 0 16px;
+  margin: 24;
   text-transform: uppercase;
   font-weight: 600;
   color: #0a0a0a;
 }
 
-.image,
 .profile{
   margin: 0;
   border-radius: 10px;
@@ -188,6 +220,9 @@ nav > ul > li > a{
   text-align: center;
 
 }
+picture{
+  margin: none;
+}
 
 /*animation*/
 
@@ -207,7 +242,7 @@ nav > ul > li > a{
 #Fill-50,
 #left-leaf
 {
-  animation: left-leaf-animation 15s infinite alternate linear;
+  animation: left-leaf-animation 10s infinite alternate linear;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -223,7 +258,7 @@ nav > ul > li > a{
 
 #Fill-47,
 #Fill-48{
-  animation: right-leaf-animation 15s infinite alternate linear;
+  animation: right-leaf-animation 10s infinite alternate linear;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -231,7 +266,7 @@ nav > ul > li > a{
   0%{ transform: rotate(0deg);
   }
 
-  50%{ transform: rotate(-8deg);
+  50%{ transform: rotate(6deg);
   }
   100%{ transform: rotate(0deg);
   }
@@ -287,18 +322,36 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px){
 
   body{
-  font-size: 18px;
+  font-size: 17px;
+}
+.illustration{
+  margin-top: 50px;
 }
 
+h2{
+  font-size: 1.5em;
+  margin: auto;
+  margin-top: 8px;
+}
+p{
+  margin-left: auto;
+  margin-top: 16px
+
+}
+h3{
+  margin:auto;
+}
   #hero{
     text-align: center;
   }
   nav > ul {
   width: auto;
-  float: right;
-  margin-top: -70px;
-}
+  display: flex;
 
+}
+.button{
+  margin-left: 0;
+}
 [class*="col-"]{
   float: left;
   padding: 10px;
@@ -326,6 +379,13 @@ Large devices (1024px and larger)
   .col-lg-5{
     width: 40%;
   }
+  body{
+    font-size: 16px;
+  }
+  .button{
+    margin: 16px 0;
+  }
+
   #hero {
   max-width: 1200px;
   margin-left: auto;
@@ -335,8 +395,15 @@ Large devices (1024px and larger)
     margin: 200px 40px;
     padding: 0;
     text-align: left;
+    font-size: 2.2em;
 
   }
+
+
+.illustration{
+  margin-top: 60px;
+  width: 94%;
+}
 }
 
 
