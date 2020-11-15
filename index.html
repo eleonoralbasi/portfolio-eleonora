@@ -2,28 +2,32 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <script src="https://kit.fontawesome.com/4de4e9216c.js" crossorigin="anonymous"></script>
   <title>Eleonora Albasi - UI/UX Designer</title>
 </head>
 
 <body>
   <header>
     <div class="navigation-container">
-      <a href="index.html">
-      <img src="./img/logo@3x.svg" class="elelogo" alt="eleonora-logo">
+      <div class="navtoggle" id="myNavtoggle">
+      <a href="index.html"><img src="./img/logo@3x.svg" class="elelogo" alt="eleonora-logo">
       <nav>
         <ul>
           <li><a href="index.html">Projects</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
   </div>
+</div>
   </header>
   <!--hero-->
   <main>
@@ -211,8 +215,13 @@
   <footer id="contact">
     <div class="footer">
       <!--social profiles-->
-      <h4> Follow me on: </h4>
+      <h4> Let's get in touch: </h4>
+      <p>If you like my works and want to have some chat with me. Here's how you can reach me:</p>
+
       <ul class="icons">
+        <a href="mailto:eleonoralbasi@gmail.com">
+          <img src="img/gmail.png" alt="Email Icon" class="gmaillogo">
+        </a>
         <li><a href="https://www.linkedin.com/in/eleonora-albasi/" target="_blank">
             <svg class="linkedinlogo" enable-background="new 0 0 50 50" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <path d="M45,1H5C2.8,1,1,2.8,1,5v40c0,2.2,1.8,
@@ -305,7 +314,8 @@
         <p class="copyright"> Copyright ELEONORA ALBASI 2020 </p>
     </div>
   </footer>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
