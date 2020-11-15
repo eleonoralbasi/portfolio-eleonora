@@ -27,7 +27,7 @@ h1 {
   font-weight: 600;
   line-height: 1.17em;
   color: #0a0a0a;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-left: 24px;
 text-align: center;
 }
@@ -52,7 +52,9 @@ h4{
   font-weight: 600;
   margin-left: 8px;
 }
-
+main{
+  padding-top: 56px;
+}
 .elelogo{
   max-width: 150px;
   margin: 16px 16px;
@@ -97,7 +99,8 @@ a:active {
 .linkedinlogo,
 .twitterlogo,
 .dribbblelogo,
-.behancelogo{
+.behancelogo,
+.gmaillogo{
  width: 25px;
 }
 
@@ -170,8 +173,7 @@ header{
   display: flex;
 }
 nav{
-  display: block;
-  width: 100%;
+
   height: auto;
   margin: 0;
 }
@@ -179,19 +181,54 @@ nav{
 nav > ul{
   list-style-type: none;
   margin: 8;
+  margin: 0;
   float: right;
 }
 
-nav > ul > li{
-  display: inline-block;
-
-}
 nav > ul > li > a{
+  display: block;
   padding: 0 16px;
   margin: 24;
   text-transform: uppercase;
   font-weight: 600;
   color: #0a0a0a;
+}
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: -300px;
+  top: 20px;
+  font-size: 24px;
+  padding-right: 0;
+}
+.navtoggle.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .profile{
@@ -223,7 +260,18 @@ nav > ul > li > a{
 picture{
   margin: none;
 }
-
+input {
+  width: 100%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 16px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  border: 1px solid #1AC0C6;
+}
 /*animation*/
 
 /*h1 animation*/
@@ -341,13 +389,25 @@ p{
 h3{
   margin:auto;
 }
+
   #hero{
     text-align: center;
   }
+
   nav > ul {
   width: auto;
   display: flex;
+  margin: 1em 0;
 
+}
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
 }
 .button{
   margin-left: 0;
