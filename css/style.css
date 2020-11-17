@@ -174,7 +174,7 @@ header {
 .navigation-container {
   width: 96%;
   margin: auto;
-  display: block;
+  display: flex;
 }
 
 nav {
