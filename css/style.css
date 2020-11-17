@@ -174,7 +174,7 @@ header {
 .navigation-container {
   width: 96%;
   margin: auto;
-  display: flex;
+  display: block;
 }
 
 nav {
@@ -265,7 +265,9 @@ nav>ul>li>a {
 .copyright {
   text-align: center;
 }
-
+.project{
+  width: auto;
+}
 picture {
   margin: none;
 }
@@ -424,6 +426,10 @@ Medium devices (640px and larger)
   #hero {
     text-align: center;
   }
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+    display: flex;
+  }
 
   nav>ul {
     width: auto;
@@ -432,7 +438,10 @@ Medium devices (640px and larger)
   }
 
   nav>ul>li {
-    display: inline-block;
+    position: relative;
+    right: -60px;
+    top: 6px;
+
   }
 
   .navtoggle li:not(:last-child) {
@@ -479,7 +488,16 @@ Large devices (1024px and larger)
   body {
     font-size: 16px;
   }
+  nav>ul>li {
+    position: relative;
+    right: -700px;
+    top: 6px;
 
+  }
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+    display: flex;
+  }
   .button {
     margin: 16px 0;
   }
@@ -502,6 +520,7 @@ Large devices (1024px and larger)
     width: 94%;
   }
 }
+
 
 /*===============================
 X-Large devices (1440px and larger)
