@@ -1,13 +1,14 @@
 /*colors used
 Background color (white): #FFFFFF;
 Text color (black): #0A0A0A;
-Primary color: #1AC0C6
+Primary color: #0C8487
 secondary color: #134E6F
 Tertiary color: #FFA822
 */
 * {
   box-sizing: border-box;
 }
+
 
 body {
   background-color: #ffffff;
@@ -74,6 +75,8 @@ img {
 .illustration {
   margin: auto;
   max-width: 90%;
+  width: 100% ;
+
 }
 
 .project-image {
@@ -83,13 +86,14 @@ img {
 
 /*links and buttons style*/
 a {
-  color: #1AC0C6;
+  color: #0C8487;
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:focus,
 a:hover {
-  color: #1ac0c6;
+  color: #0C8487;
   text-decoration: none;
   font-weight: 600;
 }
@@ -114,17 +118,16 @@ a:active {
   padding: 10px;
   margin-left: 8px;
   border-radius: 10px;
-  border: 2px solid #1AC0C6;
-  transition-duration: 0.2s opacity;
+  border: 2px solid #0C8487;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-  background-color: #1ac0c6;
+  background-color: #0C8487;
   color: #ffffff;
   opacity: 0.8;
   border: none;
-  border: 2px solid #1AC0C6;
+  border: 2px solid #0C8487;
 }
 
 .button:active {
@@ -184,7 +187,7 @@ nav {
 
 nav>ul {
   list-style-type: none;
-  margin: 8;
+  margin: 8px;
   margin: 0;
   float: right;
 }
@@ -192,7 +195,7 @@ nav>ul {
 nav>ul>li>a {
   display: block;
   padding: 0 16px;
-  margin: 24;
+  margin: 24px;
   text-transform: uppercase;
   font-weight: 600;
   color: #0a0a0a;
@@ -252,7 +255,7 @@ nav>ul>li>a {
 .highlight {
   font-size: 1em;
   font-weight: 700;
-  color: #1AC0C6;
+  color: #0C8487;
 }
 
 .footer {
@@ -269,7 +272,7 @@ nav>ul>li>a {
   width: auto;
 }
 picture {
-  margin: none;
+  margin: 0;
 }
 
 input {
@@ -490,8 +493,8 @@ Large devices (1024px and larger)
   }
   nav>ul>li {
     position: relative;
-    right: -700px;
-    top: 6px;
+    right: -550px;
+    top: 0;
 
   }
   .navtoggle, .navtoggle.responsive {

@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
@@ -13,27 +14,26 @@
   <header>
     <div class="navigation-container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img src="./img/logo@3x.svg" class="elelogo" alt="eleonora-logo">
-          <nav>
-            <ul>
-              <li><a href="index.html">Projects</a></li>
-              <li><a href="about.html">About Me</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-            </ul>
-          </nav>
+        <a href="index.html"><img src="./img/logo@3x.svg" class="elelogo" alt="eleonora-logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
   <!--hero-->
   <main>
     <div class="project">
-      <picture class="thebloomshop-project">
-        <source srcset="img/thebloomshop/cover@1x.png" media="(max-width:767px)" width: 100%>
-        </picture>
-        <picture>
-        <img src="img/thebloomshop/cover@2x.png" width="100%" alt="the bloom shop project cover">
-        <img src="img/thebloomshop/case-study.jpg" width="100%" alt="lthe bloom shop project">
+      <picture>
+        <img src="img/thebloomshop/cover@2x.png" alt="the bloom shop project cover">
+      </picture>
+      <picture>
+        <img src="img/thebloomshop/case-study.jpg" alt="lthe bloom shop project">
       </picture>
     </div>
   </main>
@@ -44,7 +44,8 @@
         <h4> Let's get in touch: </h4>
         <p>If you like my works and want to chat with me, please
           <a href="mailto:eleonoralbasi@gmail.com">
-        <span>e-mail me!</span></p></a>
+            <span>e-mail me!</span></a>
+        </p>
       </div>
       <ul class="icons">
         <li><a href="https://www.linkedin.com/in/eleonora-albasi/" target="_blank">
@@ -136,9 +137,12 @@
               </g>
             </svg>
           </a></li>
-            <p class="copyright"> Copyright ELEONORA ALBASI 2020 </p>
-            </div>
-            </footer>
-            </body>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p> Copyright ELEONORA ALBASI 2020 </p>
+    </div>
+  </footer>
+</body>
 
-<html>
+</html>
